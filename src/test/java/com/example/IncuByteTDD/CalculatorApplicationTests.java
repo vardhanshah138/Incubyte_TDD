@@ -20,4 +20,10 @@ class CalculatorApplicationTests {
 		Assertions.assertEquals(5, calculator.add("5"));
 	}
 
+	@Test
+	void shouldAddTwoNumber() {
+		Calculator calculator = new Calculator();
+		Assertions.assertEquals(5, calculator.add("2,3"));
+	}
+
 }
