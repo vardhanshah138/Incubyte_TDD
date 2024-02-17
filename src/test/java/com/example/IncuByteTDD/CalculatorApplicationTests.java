@@ -14,4 +14,10 @@ class CalculatorApplicationTests {
 		Assertions.assertEquals(0, calculator.add(""));
 	}
 
+	@Test
+	void shouldReturnNumber() {
+		Calculator calculator = new Calculator();
+		Assertions.assertEquals(5, calculator.add("5"));
+	}
+
 }
